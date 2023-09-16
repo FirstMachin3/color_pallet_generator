@@ -1,0 +1,161 @@
+body,button, input, select {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+/* ... Previous CSS rules ... */
+
+h1 {
+    font-size: 2rem;
+    color: rgba(255, 255, 255, 0.9); /* Slightly transparent white background */
+    margin-bottom: 20px; /* Add margin to create space between h1 and main */
+}
+
+/* ... Remaining CSS rules ... */
+
+
+body {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.header {
+    position: relative;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.home-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.home-button i {
+    margin-right: 5px; /* Adjust the spacing between the icon and text */
+}
+
+h1 {
+    font-size: 2rem;
+    color: rgba(255, 255, 255, 0.9); /* Slightly transparent white background */
+}
+
+main {
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 2rem;
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    opacity: 0.9;
+    overflow-y: auto; /* Add overflow-y to enable vertical scrolling */
+    max-height: 80vh; /* Set a maximum height to limit the container's height */
+}
+
+.controls {
+    margin-bottom: 1rem;
+}
+
+.color-settings {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.color-settings label {
+    margin-right: 10px;
+    flex-shrink: 0; /* Prevent the label from shrinking */
+}
+
+select {
+    padding: 0.5rem;
+    margin-right: 10px; /* Add margin to create space between the dropdown and button */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+    flex-grow: 1; /* Allow the select element to grow and take up available space */
+}
+
+button {
+    background-color: #2196F3;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    outline: none;
+}
+
+button:hover {
+    background-color: #1976D2;
+}
+
+.palette {
+    display: flex;
+    flex-direction: row; /* Display colors in a palette horizontally */
+    gap: 10px;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 20px; /* Add margin to separate palettes vertically */
+}
+
+.color-entry {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: calc(80% - 10px); /* Adjust width for horizontal display */
+}
+
+/* Adjust the spacing between the color square and hex code */
+.color-square {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #fff;
+    margin-bottom: 10px; /* Add margin-bottom to create space between square and hex code */
+}
+
+.color-hex {
+    font-size: 0.8rem;
+    margin-top: 10px;
+}
+
+.saved-palettes {
+    margin-top: 20px;
+}
+
+.palette-group {
+    margin-bottom: 10px;
+}
