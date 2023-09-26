@@ -1,4 +1,4 @@
-# Project Title
+# Color Palette Generator
 <p align="center">
   <img src="./pallet.png">
 </p>
